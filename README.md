@@ -73,6 +73,7 @@ Returns supported fiat and crypto accounts for a partner.
 | `asset` | `string` | Yes |
 | `accountNumber` | `string` | No |
 | `accountType` | `string` | No |
+| `ifsc` | `string` | No |
 | `creationDate` | `string` | Yes |
 | `deleted` | `boolean` | Yes |
 | `network` | `string` | No |
