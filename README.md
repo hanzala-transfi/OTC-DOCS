@@ -275,3 +275,4 @@ Returns quote/pricing details before trade execution.
 ### B2C2
 
 - `clientOid` is required in the `trade`.
+- only `MARKET` orders are created in `trade`.
