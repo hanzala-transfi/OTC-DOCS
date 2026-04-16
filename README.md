@@ -66,29 +66,30 @@ Returns supported fiat and crypto accounts for a partner.
 
 #### `FiatAccountDetails`
 
-| Key | Type | Required |
-| --- | --- | --- |
-| `id` | `string` | Yes |
-| `name` | `string` | No |
-| `asset` | `string` | Yes |
+| Key             | Type | Required |
+|-----------------| --- | --- |
+| `id`            | `string` | Yes |
+| `name`          | `string` | No |
+| `asset`         | `string` | Yes |
 | `accountNumber` | `string` | No |
-| `accountType` | `string` | No |
-| `ifsc` | `string` | No |
-| `creationDate` | `string` | Yes |
-| `deleted` | `boolean` | Yes |
-| `network` | `string` | No |
+| `accountType`   | `string` | No |
+| `ifsc`          | `string` | No |
+| `creationDate`  | `string` | Yes |
+| `deleted`       | `boolean` | Yes |
+| `network`       | `string` | No |
 
 #### `CryptoAccountDetails`
 
-| Key | Type | Required |
-| --- | --- | --- |
-| `id` | `string` | Yes |
-| `address` | `string` | Yes |
-| `asset` | `string` | Yes |
-| `tag` | `string` | No |
-| `memo` | `string` | No |
-| `network` | `string` | No |
-| `deleted` | `boolean` | Yes |
+| Key            | Type | Required |
+|----------------| --- | --- |
+| `id`           | `string` | Yes |
+| `address`      | `string` | Yes |
+| `asset`        | `string` | Yes |
+| `tag`          | `string` | No |
+| `memo`         | `string` | No |
+| `name`         | `string` | No |
+| `network`      | `string` | No |
+| `deleted`      | `boolean` | Yes |
 | `creationDate` | `string` | Yes |
 
 ### 2. `getDepositDetails`
@@ -187,10 +188,12 @@ Creates a payout/withdrawal request.
 
 #### Response `data`
 
-| Key | Type | Required |
-| --- | --- | --- |
-| `orderId` | `string` | Yes |
-| `clientOid` | `string` | No |
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| `orderId` | `string` | Yes | Partner payout/order identifier. |
+| `clientOid` | `string` | No | Client-provided idempotency or payout identifier. |
+| `settlementInstructions` | `{ type?: string; data?: Record<string, unknown> \| Record<string, unknown>[] }` | No | Optional funding instructions returned by the partner. For Codex crypto payouts this can include the deposit `address` and `network`. |
+| `message` | `string` | No | Optional user-facing instruction. Example: `Deposit USDC at 0x... on ETHEREUM.` |
 
 ### 6. `payoutDetails`
 
@@ -272,8 +275,3 @@ Returns quote/pricing details before trade execution.
 
 - `tradeDetails` is matched against the partner `orderId`.
 
-### B2C2
-
-- `clientOid` is required in the `trade`.
-- only `MARKET` orders are created in `trade`.
-- `getAccountDetails` and `getDepositDetails` unimplemented.
