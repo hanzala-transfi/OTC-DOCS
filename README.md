@@ -275,3 +275,8 @@ Returns quote/pricing details before trade execution.
 
 - `tradeDetails` is matched against the partner `orderId`.
 
+### B2C2
+
+- `clientOid` is required in the `trade`.
+- only `MARKET` orders are created in `trade`.
+- `getAccountDetails` and `getDepositDetails` unimplemented.
