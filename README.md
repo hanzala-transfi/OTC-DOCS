@@ -279,4 +279,4 @@ Returns quote/pricing details before trade execution.
 
 - `clientOid` is required in the `trade`.
 - only `MARKET` orders are created in `trade`.
-- `getAccountDetails` and `getDepositDetails` unimplemented.
+- `getAccountDetails` and `transferRate` unimplemented.
