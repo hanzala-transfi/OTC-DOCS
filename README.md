@@ -280,3 +280,8 @@ Returns quote/pricing details before trade execution.
 - `clientOid` is required in the `trade`.
 - only `MARKET` orders are created in `trade`.
 - `getAccountDetails` and `transferRate` unimplemented.
+
+### Paymongo
+
+- crypto is not supported, only fiat support is there.
+- `trade`, `tradeDetails`, `transferRate` and `tradeRate` unimplemented.
