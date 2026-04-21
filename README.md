@@ -281,6 +281,15 @@ Returns quote/pricing details before trade execution.
 - only `MARKET` orders are created in `trade`.
 - `getAccountDetails` and `transferRate` unimplemented.
 
+### OPENFX
+
+- `clientOid` is required in the `trade`.
+- only `MARKET` orders are created in `trade`.
+- `transferRate` unimplemented.
+- 5$ min deposit limit 
+- 100$ min trade limit
+
+
 ### Paymongo
 
 - crypto is not supported, only fiat support is there.
