@@ -209,15 +209,15 @@ Returns the current status of a payout.
 
 #### Response `data`
 
-| Key | Type | Required |
-| --- | --- | --- |
-| `orderId` | `string` | Yes |
-| `clientOid` | `string` | No |
-| `status` | `OtcOperationStatus` | Yes |
-| `amount` | `number` | No |
-| `fiatAmount` | `number` | No |
-| `error` | `string` | No |
-| `timestamp` | `string` | Yes |
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+| `orderId` | `string` | Yes | |
+| `clientOid` | `string` | No | |
+| `status` | `OtcOperationStatus` | Yes | |
+| `amount` | `number` | No | Final amount received after fee deduction |
+| `fiatAmount` | `number` | No | |
+| `error` | `string` | No | |
+| `timestamp` | `string` | Yes | |
 
 ### 7. `transferRate`
 
