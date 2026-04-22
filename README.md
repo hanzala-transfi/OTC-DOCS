@@ -289,7 +289,10 @@ Returns quote/pricing details before trade execution.
 - 5$ min deposit limit 
 - 100$ min trade limit
 
+### NILOS
 
+- only `MARKET` orders are created in `trade`.
+- `transferRate` unimplemented.
 ### Paymongo
 
 - crypto is not supported, only fiat support is there.
