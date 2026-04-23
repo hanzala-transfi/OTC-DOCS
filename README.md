@@ -293,6 +293,14 @@ Returns quote/pricing details before trade execution.
 
 - only `MARKET` orders are created in `trade`.
 - `transferRate` unimplemented.
+
+### PDAX
+
+- only `MARKET` orders are created in `trade`.
+- `transferRate` unimplemented.
+- `payout` amount >= 200 PHP 
+
+
 ### Paymongo
 
 - crypto is not supported, only fiat support is there.
