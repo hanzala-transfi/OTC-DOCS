@@ -299,6 +299,8 @@ Returns quote/pricing details before trade execution.
 - only `MARKET` orders are created in `trade`.
 - `transferRate` unimplemented.
 - `payout` amount >= 200 PHP 
+- `clientOId` not required in trade 
+- `clientOId` not required in payout
 
 
 ### Paymongo
