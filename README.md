@@ -134,6 +134,7 @@ Places a buy or sell order.
 | `price`        | `number \| string` | No       | If type is `LIMIT`,then required.      |
 | `clientOid`    | `string` | No       | Client order identifier.             |
 | `entityCreds`  | `EntityCreds` | No       | Entity-specific credential selector. |
+| `toId`  | `string` | No       | Required for Koywe. |
 
 #### Response `data`
 
@@ -232,6 +233,7 @@ Returns fee/rate data for a transfer flow.
 | `toCurrency`   | `string` | Yes | toCurrency for fee lookup. |
 | `amount`       | `number \| string` | Yes | amount for fee lookup. |
 | `entityCreds`  | `EntityCreds` | No | Entity-specific credential selector. |
+| `toId`  | `string` | No       | Required for Koywe. |
 
 #### Response `data`
 
@@ -254,6 +256,7 @@ Returns quote/pricing details before trade execution.
 | `size` | `number \| string` | Yes | Requested size. |
 | `type` | `OtcOrderType` | Yes | `MARKET` or `LIMIT`. |
 | `entityCreds` | `EntityCreds` | No | Entity-specific credential selector. |
+| `toId`  | `string` | No       | Required for Koywe. |
 
 #### Response `data`
 
