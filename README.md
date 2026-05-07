@@ -307,3 +307,8 @@ Returns quote/pricing details before trade execution.
 
 - crypto is not supported, only fiat support is there.
 - `trade`, `tradeDetails`, `transferRate` and `tradeRate` unimplemented.
+
+### NONCO
+
+- `payout` amount >= 2000 COP 
+- `payout`, `payoutDetails` and `transferRate` unimplemented.
