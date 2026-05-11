@@ -274,6 +274,7 @@ Returns quote/pricing details before trade execution.
 
 - `getAccountDetails` may use `beneId`.
 - `Trade` & `Trade Details` is not supported.
+- `toId` is required for transferRate.
 
 ### Hercle
 
