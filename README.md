@@ -321,3 +321,10 @@ Returns quote/pricing details before trade execution.
 
 - crypto is not supported, only fiat support is there.
 - deposit is not used for fincra by treasury, so no deposit flow.
+
+### Netcoins
+
+- only crypto payout support is there.
+- deposit details are not supported.
+- transferRate is not supported.
+  
