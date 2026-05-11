@@ -280,6 +280,11 @@ Returns quote/pricing details before trade execution.
 
 - `tradeDetails` is matched against the partner `orderId`.
 
+### Koywe
+
+- `AccountDetails` & `Deposit Details` is not supported.
+- `toId` is required for trade, tradeDetails, payoutDetails, transferRate, transferRate & balances.
+
 ### B2C2
 
 - `clientOid` is required in the `trade`.
