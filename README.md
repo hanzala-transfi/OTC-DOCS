@@ -273,6 +273,7 @@ Returns quote/pricing details before trade execution.
 ### Caliza
 
 - `getAccountDetails` may use `beneId`.
+- `Trade` & `Trade Details` is not supported.
 
 ### Hercle
 
