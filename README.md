@@ -156,6 +156,7 @@ Returns details for a trade/order.
 | `fromCurrency` | `string` | Yes | Source currency. |
 | `toCurrency` | `string` | Yes | Destination currency. |
 | `entityCreds` | `EntityCreds` | No | Entity-specific credential selector. |
+| `toId`  | `string` | No       | Required for Koywe. |
 
 #### Response `data`
 
@@ -207,6 +208,7 @@ Returns the current status of a payout.
 | `partnerName` | `string` | Yes | OTC partner name. |
 | `id` | `string` | Yes | Payout identifier. |
 | `entityCreds` | `EntityCreds` | No | Entity-specific credential selector. |
+| `toId`  | `string` | No       | Required for Koywe. |
 
 #### Response `data`
 
