@@ -273,7 +273,7 @@ Returns quote/pricing details before trade execution.
 ### Caliza
 
 - `getAccountDetails` may use `beneId`.
-- `Trade` & `Trade Details` is not supported.
+- `Trade`, `Trade Details` & `Trade Rate` is not supported.
 - `toId` is required for transferRate.
 
 ### Hercle
