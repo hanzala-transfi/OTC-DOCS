@@ -322,7 +322,7 @@ Returns quote/pricing details before trade execution.
 
 ### NONCO
 
-- `payout` amount >= 2000 COP 
+- `payout` amount >= 2000 COP , amount >= 1000 MXN
 - `payout`, `payoutDetails` and `transferRate` unimplemented.
 
 ### Fincra
