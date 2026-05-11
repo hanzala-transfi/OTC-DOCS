@@ -327,4 +327,8 @@ Returns quote/pricing details before trade execution.
 - only crypto payout support is there.
 - deposit details are not supported.
 - transferRate is not supported.
+- only MARKET orders are created in trade
+  
+###  Brla
+- only MARKET orders are created in trade
   
