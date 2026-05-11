@@ -315,3 +315,8 @@ Returns quote/pricing details before trade execution.
 
 - `payout` amount >= 2000 COP 
 - `payout`, `payoutDetails` and `transferRate` unimplemented.
+
+### Fincra
+
+- crypto is not supported, only fiat support is there.
+- deposit is not used for fincra by treasury, so no deposit flow.
