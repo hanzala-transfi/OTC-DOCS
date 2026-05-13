@@ -329,6 +329,7 @@ Returns quote/pricing details before trade execution.
 
 - crypto is not supported, only fiat support is there.
 - deposit is not used for fincra by treasury, so no deposit flow.
+- In Trade/TradeDetails, both MARKET and LIMIT gives same result as it doesn't support that functionality.
 
 ### Netcoins
 
@@ -342,5 +343,10 @@ Returns quote/pricing details before trade execution.
   
 ###  Brla
 - only MARKET orders are created in trade
+
+###  PayOK
+- crypto is not supported, only fiat support is there.
+- In payoutDetails, toCurrency is also required to be passed because of different MID accounts.
+- Minimum payout limit for IDR is 10,000 and for VND is 50,000.
 
   
