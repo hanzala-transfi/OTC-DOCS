@@ -335,7 +335,7 @@ Returns quote/pricing details before trade execution.
 
 - only crypto payout support is there.
 - asset is mandatory in getAccountDetails
-- Supports crypto-to-fiat and fiat-to-crypto trades.
+- Supports crypto-to-fiat and fiat-to-crypto trades (MARKET and LIMIT orders are both supported)
 - Minimum payout amount is 20 USDC (varies for each crypto payout asset)
   
 ###  Brla
