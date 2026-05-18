@@ -343,6 +343,11 @@ Returns quote/pricing details before trade execution.
   
 ###  Brla
 - only MARKET orders are created in trade
+### DUSUPAY
+- Supported currencies: TZS, ZAR, UGX
+- Minimum payout limit is: TZS ≥ 2000, UGX ≥ 3000, ZAR ≥ 20
+- Payouts in ZAR take 1 day for bank settlement
+- Only supports payout, payoutDetails, and getBalances services
 
 ###  PayOK
 - crypto is not supported, only fiat support is there.
