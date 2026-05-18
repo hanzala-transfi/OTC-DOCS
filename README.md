@@ -338,14 +338,22 @@ Returns quote/pricing details before trade execution.
 - Supports crypto-to-fiat and fiat-to-crypto trades (MARKET and LIMIT orders are both supported)
 - Minimum payout amount is 20 USDC (varies for each crypto payout asset)
   
-###  Brla
+###  BRLA
+
 - only MARKET orders are created in trade
+- getDepositDetails is not supported
+- Supports crypto-to-crypto trade only (BRLA, USDT, USDC, EURC)
+- crypto to fiat direct payout  (BRL)
+  
 ### DUSUPAY
+
 - Supported currencies: TZS, ZAR, UGX
 - Minimum payout limit is: TZS ≥ 2000, UGX ≥ 3000, ZAR ≥ 20
 - Payouts in ZAR take 1 day for bank settlement
 - Only supports payout, payoutDetails, and getBalances services
-
+### Pay2Pay
+- Only supports payout, payoutDetails, and getDepositDetails
+- Minimum payout for VND is 10,000
 ###  PayOK
 - crypto is not supported, only fiat support is there.
 - In payoutDetails, toCurrency is also required to be passed because of different MID accounts.
