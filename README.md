@@ -334,9 +334,6 @@ Returns quote/pricing details before trade execution.
 ### Netcoins
 
 - only crypto payout support is there.
-- deposit details are not supported.
-- transferRate is not supported.
-- only MARKET orders are created in trade
 - asset is mandatory in getAccountDetails
 - Supports crypto-to-fiat and fiat-to-crypto trades.
 - Minimum payout amount is 20 USDC (varies for each crypto payout asset)
