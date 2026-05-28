@@ -336,6 +336,7 @@ Returns quote/pricing details before trade execution.
 - only crypto payout support is there.
 - asset is mandatory in getAccountDetails
 - Supports crypto-to-fiat and fiat-to-crypto trades (MARKET and LIMIT orders are both supported)
+- SIDE = SELL if fromCurrency is crypto.  SIDE = BUY if toCurrency is crypto.
 - Minimum payout amount is 20 USDC (varies for each crypto payout asset)
   
 ###  BRLA
