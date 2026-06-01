@@ -270,6 +270,21 @@ Returns quote/pricing details before trade execution.
 | `fromCurrencyPrice` | `number` | No |
 | `quoteId` | `string` | No |
 
+### 9. `Getbalance`
+
+Returns quote/pricing details before trade execution.
+
+#### Request
+
+| Key | Type | Required | Description |
+| --- | --- | --- | --- |
+
+#### Response `data`
+
+| Key | Type | Required |
+| --- | --- | --- |
+| `balances` | `object` | Yes |
+
 ## Partner-Specific Notes
 
 ### Caliza
@@ -352,13 +367,22 @@ Returns quote/pricing details before trade execution.
 - Minimum payout limit is: TZS ≥ 2000, UGX ≥ 3000, ZAR ≥ 20
 - Payouts in ZAR take 1 day for bank settlement
 - Only supports payout, payoutDetails, and getBalances services
+  
 ### Pay2Pay
 - Only supports payout, payoutDetails, and getDepositDetails
 - Minimum payout for VND is 10,000
+  
 ###  PayOK
 - crypto is not supported, only fiat support is there.
 - In payoutDetails, toCurrency is also required to be passed because of different MID accounts.
 - Minimum payout limit for IDR is 10,000 and for VND is 50,000.
 - only `payout`, `payoutDetails`, `balances` API are supported.
 
-  
+###  Codex
+- getAccountDetails, getDepositDetails, trade, tradeDetails, tradeRate & balances api is not there.
+- In this everything is handled at transfer function itself. Once the request is made a deposit address will be returned and after makking a  deposit on that address the amount will settleed in fiat.
+
+###  PayOK
+- crypto is not supported, only fiat support is there.
+- trade, tradeDetails & tradeRate not supported.
+
