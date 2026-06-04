@@ -391,3 +391,6 @@ Returns quote/pricing details before trade execution.
 - trade, tradeDetails, tradeRate, transferRate not supported.
 - Minimum IDR payout is 10,000
 
+###  Passpoint
+- trade, tradeDetails & tradeRate not supported.
+
