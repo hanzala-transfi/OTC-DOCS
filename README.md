@@ -394,3 +394,7 @@ Returns quote/pricing details before trade execution.
 ###  Passpoint
 - trade, tradeDetails & tradeRate not supported.
 
+###  Koywe
+- getAccountDetails & getDepositDetails not supported.
+- In trade, tradeDetails toId is required.
+
