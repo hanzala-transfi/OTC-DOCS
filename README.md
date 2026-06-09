@@ -388,7 +388,7 @@ Returns quote/pricing details before trade execution.
 
 ###  DurianPay
 - crypto is not supported, only fiat support is there.
-- trade, tradeDetails, tradeRate, transferRate not supported.
+- getDepositDetails, trade, tradeDetails, tradeRate, transferRate not supported.
 - Minimum IDR payout is 10,000
 
 ###  Passpoint
