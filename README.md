@@ -398,3 +398,7 @@ Returns quote/pricing details before trade execution.
 - getAccountDetails & getDepositDetails not supported.
 - In trade, tradeDetails toId is required.
 
+###  CVPay
+- getAccountDetails, getDepositDetails, transferRate not supported.
+- Minimum VND payout is 50,000
+
