@@ -400,5 +400,5 @@ Returns quote/pricing details before trade execution.
 
 ###  CVPay
 - getAccountDetails, getDepositDetails, transferRate not supported.
-- Minimum VND payout is 50,000
+- Minimum VND payout is 10,000
 
