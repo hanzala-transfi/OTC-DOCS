@@ -402,3 +402,8 @@ Returns quote/pricing details before trade execution.
 - getAccountDetails, getDepositDetails, transferRate not supported.
 - Minimum VND payout is 10,000
 
+###  Fuse
+- Does'nt support Crypto.
+- trade, payout & transferRate requires toId.
+- Don't try trade as our USD account is blocked. Test only for AED.
+
